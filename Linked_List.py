@@ -67,16 +67,6 @@ class LinkedList:
                     current_node = current_node.next
             return False
 
-    def remove(self, value):
-        if self.length > 0:
-            current_node = self.head
-            while current_node.next is not None:
-                if current_node.data == value:
-                    return True
-                else:
-                    current_node = current_node.next
-            return False
-
     # print method for the linked list
     def print_linked_list(self):
         current = self.head
